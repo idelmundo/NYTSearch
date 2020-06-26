@@ -22,25 +22,39 @@
         <form>
             <div class="form-group">
               <label for="search-term">Search Term:</label>
-              <input type="text" class="form-control" id="inputSearchTerm">
+              <input type="text" class="form-control" id="SearchTerm">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Number of Records to retrive</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="numRecord">Number of Records to retrive</label>
+              <select class="form-control" id="NumRecords">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control">
-              <label class="form-check-label" for="exampleCheck1">Start year(Optional)</label>
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">End year(Optional)</label>
+                <label for="start-year">Start year (optional)</label>
+                <input type="text" class="form-control" id="StartYear">
               </div>
+              <div class="form-group">
+                <label for="end-year">End year (optional)</label>
+                <input type="text" class="form-control" id="EndYear">
+              </div>
+            
             <button type="button" class="btn btn-primary">Search</button>
             <button type="button" class="btn btn-primary">Clear</button>
-
           </form>
-          
+        </div>
+
+        <div class="card">
+            <div class="card-header">Search results</div>
         </div>
     </div>
     
